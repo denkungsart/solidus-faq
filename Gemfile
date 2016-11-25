@@ -1,5 +1,8 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'spree', github: 'spree/spree', branch: 'master'
+gem "solidus_core", "~> 2.0.0"
+gem "solidus_frontend", "~> 2.0.0"
+gem "solidus_backend", "~> 2.0.0"
+gem "deface"
 
 gemspec
