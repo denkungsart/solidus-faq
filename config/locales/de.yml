@@ -1,0 +1,38 @@
+---
+de:
+  activerecord:
+    models:
+      spree/question_category:
+        one: Question Category
+        other: Question Categories
+      spree/question:
+        one: Question
+        other: Questions
+    attributes:
+      spree/question_category:
+        question: Question
+        answer: Answer
+        created_at: Created At
+        updated_at: Updated At
+      spree/question:
+        name: Name
+        question: Question
+        answer: Answer
+        created_at: Created At
+        updated_at: Updated At
+  spree:
+    new_question_category: New Question Category
+    new_question: New Question
+    spree_faq:
+      questions: Questions
+      question_categories: Question Categories
+      add_question: Add Question
+      category_name: Category Name
+      frequently_asked_questions: Frequently Asked Questions
+      faq: FAQ
+      faq_categories: FAQ Categories
+    admin:
+      tab:
+        faq: FAQ
+        questions: Questions
+        question_categories: Question Categories
