@@ -23,6 +23,7 @@ en:
   spree:
     new_question_category: New Question Category
     new_question: New Question
+    editing_resource: Editing %{resource}
     spree_faq:
       questions: Questions
       question_categories: Question Categories
