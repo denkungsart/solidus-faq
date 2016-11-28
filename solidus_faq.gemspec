@@ -1,11 +1,11 @@
 lib = File.expand_path('../lib/', __FILE__)
 $LOAD_PATH.unshift lib unless $LOAD_PATH.include?(lib)
 
-require 'spree_faq/version'
+require 'solidus_faq/version'
 
 Gem::Specification.new do |s|
   s.platform      = Gem::Platform::RUBY
-  s.name          = 'spree-faq'
+  s.name          = 'solidus-faq'
   s.version       = SpreeFaq.version
   s.summary       = 'Adds an easy FAQ page for Spree Commerce'
   s.description   = s.summary
@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
 
   s.authors      = ['Josh Nussbaum', 'Tobias Bohwalli']
   s.email        = 'hi@futhr.io'
-  s.homepage     = 'https://github.com/futhr/spree-faq'
+  s.homepage     = 'https://github.com/denkungsart/solidus-faq'
   s.license      = 'BSD-3'
 
   s.files        = `git ls-files`.split("\n")

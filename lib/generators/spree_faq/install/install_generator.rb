@@ -12,7 +12,7 @@ module SpreeFaq
       end
 
       def add_migrations
-        run 'bundle exec rake railties:install:migrations FROM=spree_faq'
+        run 'bundle exec rake railties:install:migrations FROM=solidus_faq'
       end
 
       def run_migrations

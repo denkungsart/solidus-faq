@@ -7,7 +7,7 @@ SimpleCov.formatters = [
 ]
 SimpleCov.start do
   add_filter 'spec'
-  add_filter 'lib/spree_faq/engine'
+  add_filter 'lib/solidus_faq/engine'
   add_group  'Controllers', 'app/controllers'
   add_group  'Overrides', 'app/overrides'
   add_group  'Models', 'app/models'

@@ -1,6 +1,6 @@
 require 'solidus_core'
 require 'solidus_frontend'
 require 'solidus_backend'
-require 'spree_faq/version'
-require 'spree_faq/engine'
+require 'solidus_faq/version'
+require 'solidus_faq/engine'
 require 'coffee_script'
