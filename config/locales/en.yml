@@ -31,3 +31,8 @@ en:
       frequently_asked_questions: Frequently Asked Questions
       faq: FAQ
       faq_categories: FAQ Categories
+    admin:
+      tab:
+        faq: FAQ
+        questions: Questions
+        question_categories: Question Categories

@@ -27,3 +27,8 @@ sv:
       frequently_asked_questions: Vanliga frågor och svar
       faq: Frågor och svar
       faq_categories: FAQ kategorier
+    admin:
+      tab:
+        faq: Frågor och svar
+        questions: Vanliga frågor och svar
+        question_categories: FAQ kategorier

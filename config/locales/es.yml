@@ -20,3 +20,8 @@ es:
       new_question_category: Nueva Categoría
       question_categories: Preguntas frecuentes
       question_categories_admin: FAQ
+    admin:
+      tab:
+        faq: FAQ
+        questions: Preguntas Frecuentes
+        question_categories: Preguntas frecuentes

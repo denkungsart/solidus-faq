@@ -31,3 +31,8 @@ it:
       frequently_asked_questions: Domande Frequenti
       faq: FAQ
       faq_categories: Categorie FAQ
+    admin:
+      tab:
+        faq: FAQ
+        questions: Domande Frequenti
+        question_categories: Categorie FAQ
