@@ -4,7 +4,7 @@ RSpec.describe Spree::Admin::QuestionCategoriesController, type: :controller do
   let!(:question_category) { create(:question_category) }
 
   context '#index' do
-    before { spree_get :index }
+    before { get :index }
 
     it 'renders the :index template' do
       expect(response).to render_template :index
@@ -12,7 +12,7 @@ RSpec.describe Spree::Admin::QuestionCategoriesController, type: :controller do
   end
 
   context '#new' do
-    before { spree_get :new }
+    before { get :new }
 
     it 'assigns a new Spree::QuestionCategory' do
       expect(assigns(:question_category)).to be_a_new Spree::QuestionCategory
@@ -24,7 +24,7 @@ RSpec.describe Spree::Admin::QuestionCategoriesController, type: :controller do
   end
 
   context '#edit' do
-    before { spree_get :edit, id: question_category }
+    before { get :edit, id: question_category }
 
     it 'assigns question_category to object' do
       expect(assigns(:question_category)).to eq question_category
@@ -41,12 +41,12 @@ RSpec.describe Spree::Admin::QuestionCategoriesController, type: :controller do
     context 'with valid params' do
       it 'creates a new Spree::QuestionCategory' do
         expect {
-          spree_post :create, question_category: attributes
+          post :create, question_category: attributes
         }.to change(Spree::QuestionCategory, :count).by(1)
       end
 
       it 'assigns a newly created question_category as @question_category' do
-        spree_post :create, question_category: attributes
+        post :create, question_category: attributes
         expect(assigns(:question_category)).to be_a Spree::QuestionCategory
         expect(assigns(:question_category)).to be_persisted
       end
@@ -56,13 +56,13 @@ RSpec.describe Spree::Admin::QuestionCategoriesController, type: :controller do
   context '#destroy' do
     it 'destroys the requested question_category' do
       expect {
-        spree_delete :destroy, id: question_category
+        delete :destroy, id: question_category
       }.to change(Spree::QuestionCategory, :count).by(-1)
     end
 
     it 'requires the :id parameter' do
       expect {
-        spree_delete :destroy
+        delete :destroy
       }.to raise_error(ActionController::UrlGenerationError)
     end
   end

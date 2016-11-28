@@ -13,7 +13,7 @@ RSpec.describe Spree::FaqsController, type: :controller do
         create(:question_category)
       ]
 
-      spree_get :index
+      get :index
       expect(assigns(:categories)).to eq categories
       expect(response).to be_success
     end

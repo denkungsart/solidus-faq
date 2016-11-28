@@ -6,7 +6,7 @@ RSpec.describe Spree::Admin::QuestionsController, type: :controller do
   end
 
   context '#index' do
-    before { spree_get :index }
+    before { get :index }
 
     it 'renders the :index template' do
       expect(response).to render_template :index
@@ -14,7 +14,7 @@ RSpec.describe Spree::Admin::QuestionsController, type: :controller do
   end
 
   context '#new' do
-    before { spree_get :new }
+    before { get :new }
 
     it 'assigns a new Spree::Question' do
       expect(assigns(:question)).to be_a_new Spree::Question
@@ -26,7 +26,7 @@ RSpec.describe Spree::Admin::QuestionsController, type: :controller do
   end
 
   context '#edit' do
-    before { spree_get :edit, id: question }
+    before { get :edit, id: question }
 
     it 'assigns question to object' do
       expect(assigns(:question)).to eq question
@@ -45,12 +45,12 @@ RSpec.describe Spree::Admin::QuestionsController, type: :controller do
     context 'with valid params' do
       it 'creates a new Spree::Question' do
         expect {
-          spree_post :create, question: attributes
+          post :create, question: attributes
         }.to change(Spree::Question, :count).by(1)
       end
 
       it 'assigns a newly created question as @question' do
-        spree_post :create, question: attributes
+        post :create, question: attributes
         expect(assigns(:question)).to be_a Spree::Question
         expect(assigns(:question)).to be_persisted
       end
@@ -60,13 +60,13 @@ RSpec.describe Spree::Admin::QuestionsController, type: :controller do
   context '#destroy' do
     it 'destroys the requested question' do
       expect {
-        spree_delete :destroy, id: question
+        delete :destroy, id: question
       }.to change(Spree::Question, :count).by(-1)
     end
 
     it 'requires the :id parameter' do
       expect {
-        spree_delete :destroy
+        delete :destroy
       }.to raise_error(ActionController::UrlGenerationError)
     end
   end
