@@ -1,0 +1,6 @@
+<% if can? :admin, Spree::QuestionCategory %>
+  <ul class="admin-subnav" data-hook="admin_faq_sub_tabs">
+    <%= tab :questions %>
+    <%= tab :question_categories %>
+  </ul>
+<% end %>

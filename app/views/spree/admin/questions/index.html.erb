@@ -36,14 +36,13 @@
           </div>
         </div>
       </div>
-      <div class="form-actions" data-hook="admin_reviews_index_search_buttons">
+        <div class="form-actions" data-hook="admin_reviews_index_search_buttons">
         <%= button Spree.t(:filter_results), 'search' %>
       </div>
     <% end %>
   </div>
 <% end %>
 
-<%= render 'spree/admin/shared/index_table_options', collection: @questions %>
 
 <% if @questions.any? %>
   <table class="table sortable" id="listing_questions" data-hook data-sortable-link="<%= update_positions_admin_questions_url %>">
@@ -77,5 +76,3 @@
     <%= link_to Spree.t(:add_one), new_object_url %>!
   </div>
 <% end %>
-
-<%= render 'spree/admin/shared/index_table_options', collection: @questions %>

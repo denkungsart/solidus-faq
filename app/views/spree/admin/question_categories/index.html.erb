@@ -29,8 +29,6 @@
   </div>
 <% end %>
 
-<%= render 'spree/admin/shared/index_table_options', collection: @question_categories %>
-
 <% if @question_categories.any? %>
   <table class="table" id="listing_question_categories">
     <thead>
@@ -61,5 +59,3 @@
     <%= link_to Spree.t(:add_one), spree.new_admin_question_category_path %>!
   </div>
 <% end %>
-
-<%= render 'spree/admin/shared/index_table_options', collection: @question_categories %>
