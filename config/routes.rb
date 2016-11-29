@@ -7,5 +7,6 @@ Spree::Core::Engine.routes.draw do
     end
     resources :question_categories, :questions, concerns: :positionable
   end
-  get 'faq', to: 'faqs#index'
+  
+  resource :faq, only: :index
 end
