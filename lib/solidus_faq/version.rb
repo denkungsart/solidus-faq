@@ -9,10 +9,9 @@ module SpreeFaq
 
   module VERSION
     MAJOR = 3
-    MINOR = 1
+    MINOR = 2
     TINY  = 0
-    PRE   = 'beta'
 
-    STRING = [MAJOR, MINOR, TINY, PRE].compact.join('.')
+    STRING = [MAJOR, MINOR, TINY].compact.join('.')
   end
 end
